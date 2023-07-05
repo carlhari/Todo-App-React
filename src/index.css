@@ -85,10 +85,11 @@ form input[type="submit"]{
     padding: 1rem 3rem;
     background-color: #FCF8E8;
     color:#678d74;
-    font-size: 18px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: bolder;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .items button{
@@ -98,4 +99,89 @@ form input[type="submit"]{
     padding:5px;
     border:none;
     border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media  screen and (max-width:1366px) {
+    .main-content{  
+        width: 80%;
+    }
+
+    .header{
+        width:60%;
+    }
+    .header p{
+        font-size: 35px;
+    }
+}
+
+@media  screen and (max-width: 850px) {
+    .main-content{
+        width:95%;
+    }
+
+    .items{
+        width: 80%;
+    }
+
+    form{
+        width:70%;
+    }
+
+    .header{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header p{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .header{
+        width:100%;
+        padding: 0;
+    }
+
+    .header p{
+        font-size:25px;
+    }
+
+    form{
+        width: 100%;
+        padding:0;
+    }
+
+    form input[type="text"]{
+        font-size: 20px;
+        border-radius: 5px;
+        
+    }
+
+    form input[type="submit"]{
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    .items{
+        padding: 2px;
+        width:100%;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    .items button{
+        font-size: 15px;
+        padding:3px;
+        border-radius: 5px;
+    }
+
+    .main-content{
+        border-radius: 5px;
+        padding:5px;
+    }
 }
